@@ -29,7 +29,7 @@ _Wiring diagram of programmed ESP8266 with DHT_
 
 ## Sending JSON data via HTTP POST
 The easiest way to send data in JSON using ESP8266 is adding header with content-type and next pass data formatted like JSON:
-```
+```cpp
 http.addHeader("Content-Type", "application/json");
 http.POST("{\"param1\":" + String(data1) + ",\"param2\":" + String(data2)+"}");
 ```
