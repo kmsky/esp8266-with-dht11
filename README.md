@@ -33,7 +33,6 @@ The easiest way to send data in JSON using ESP8266 is adding header with content
 http.addHeader("Content-Type", "application/json");
 http.POST("{\"param1\":" + String(data1) + ",\"param2\":" + String(data2)+"}");
 ```
-__(Backslashes should be single, but the markdown does not allow this.)__
 
 Doing it this way allows us to avoid including _ArduinoJson_ library.
 
